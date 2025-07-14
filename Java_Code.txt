@@ -1,0 +1,19 @@
+import java.util.HashMap;
+
+public class Beispiel {
+    public static void main(String[] args) {
+        HashMap<String, Integer> alter = new HashMap<>();
+
+        alter.put("Anna", 25);
+        alter.put("Ben", 30);
+        alter.put("Clara", 22);
+
+        // Zugriff
+        System.out.println("Alter von Anna: " + alter.get("Anna"));
+
+        // Schleife über Einträge
+        for (String name : alter.keySet()) {
+            System.out.println(name + " ist " + alter.get(name) + " Jahre alt.");
+        }
+    }
+}
